@@ -2,33 +2,34 @@
     import topVideo from "$lib/topVideo.mp4";
 </script>
 
-<!-- <body> -->
+<body>
 
-    <video autoplay muted loop id="topVideo">
-        <source src={topVideo} type="video/mp4">
-    </video>
+    <div class="screenOne">
 
-    <!-- <div class="topContent"> -->
+        <video autoplay muted loop id="topVideo">
+            <source src={topVideo} type="video/mp4">
+        </video>
+
+        <!-- <div class="topContent"> -->
         <div class="navBar">
-            <nav>
-                <a class="leftNav" href="/packages">portrait packages</a>
-                <a class="leftNav" href="/blog">blog</a>
-                <a class="leftNav" href="/contact">contact</a>
-                <a class="titleBar" href="/">scenes from daydreams</a>
-            </nav>
+            <a href="/packages">portrait packages</a>
+            <a href="/blog">blog</a>
+            <a href="/contact">contact</a>
+            <div class="navBar-center">
+                <a href="/test">scenes from daydreams</a>
+            </div>
         </div>
     <!-- </div> -->
 
     <!-- Make screen one be the whole first screen, not just the title. Then you can organize things around that div and give it a background? -->
-    <!-- <div class="screenOne">
 
-        <div class="centerTitle">
+        <!-- <div class="centerTitle">
             <h2>scenes from daydreams</h2>
             <h3>photography by maggie blake</h3>
-        </div>
+        </div> -->
 
         <hr>
-    </div> -->
+    </div>
 
     <!-- <div class="screenTwo">
 
@@ -37,12 +38,49 @@
         </svg>
     </div> -->
 
-<!-- </body> -->
+</body>
 
  <style>
 
-    body {
+    /* body {
         background: #232323;
+    } */
+
+    .screenOne {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* navBar help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
+    .navBar {
+        position: relative;
+        padding-top: 1.75%;
+        width: 100%;
+    }
+
+    .navBar a, a:hover, a:focus, a:active {
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 350;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navBar-center a {
+        float: none;
+        position: absolute;
+
+        top: 50;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     /* adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
@@ -51,6 +89,8 @@
         right: 0;
         bottom: 0;
         margin-bottom: -700px;
+
+        /* background: #232323; */
 
         z-index: -1;
         min-width: 100%;
@@ -61,44 +101,17 @@
         opacity: 50%;
     }
 
-    .topContent {
+    /* .topContent {
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.2);
-    }
+    } */
 
-    .navBar {
-        position: fixed;
-        top: 0;
-        padding-top: 1.75%;
-        color: #ffffff;
-        width: 30%;
-    }
+    /* .navBar {
+        /* position: fixed; */
+        /* top: 0; */
 
-    .leftNav {
-        text-decoration: none;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 350;
-        color: #ffffff;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .titleBar {
-        position: fixed;
-        padding-right: 50%;
-        padding-top: 1.75%;
-        text-align: center;
-        text-decoration: none;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 500;
-        color: #ffffff;
-        font-size: 20px;
-        top: 0;
-        right: 0%;
-        color: #ffffff;
-        width: 20%;
-    } 
+    /* } */
 
     /* a, a:hover, a:focus, a:active {
         text-decoration: none;
@@ -109,7 +122,7 @@
         padding-right: 5px;
     } */
 
-    .centerTitle {
+    /* .centerTitle {
         width: 25%;
         padding-left: 37.5%;
         padding-top: 7.5%;
@@ -121,19 +134,19 @@
         font-weight: 100;
 
         color: #ffffff;
-    }
+    } */
 
     /* h2 {
 
     } */
 
-    h3 {
+    /* h3 {
         padding-bottom: 15%;
 
         font-size: 16px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 100;
-    }
+    } */
 
     hr {
         position: relative;
@@ -141,10 +154,10 @@
         color: #ffffff;
     }
 
-    .screenTwo {
+    /* .screenTwo {
         position: relative;
         padding-top: 100%;
         min-width: 100%;
         min-height: 100%
-    }
+    } */
 </style>
