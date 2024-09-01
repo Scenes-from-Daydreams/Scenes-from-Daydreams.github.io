@@ -22,12 +22,22 @@
         </div>
     </div>
 
-    <div class="centerTitle">
-        <h2>scenes from daydreams</h2>
-        <h3>photography by maggie blake</h3>
+    <div class="screenOne">
+
+        <div class="centerTitle">
+            <h2>scenes from daydreams</h2>
+            <h3>photography by maggie blake</h3>
+        </div>
+
+        <hr>
     </div>
 
-    <hr>
+    <div class="screenTwo">
+
+        <svg width=100% height=100%>
+            <rect width=100% height=100%/>
+        </svg>
+    </div>
 
 </body>
 
@@ -43,13 +53,18 @@
         right: 0;
         bottom: 0;
         margin-bottom: -700px;
+
         min-width: 100%;
         min-height: 100%;
+        /* max-width: 100%;
+        max-height: 100%; */
+        
         opacity: 50%;
     }
 
     .topContent {
         width: 100%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.2);
     }
 
@@ -110,8 +125,8 @@
     } */
 
     h3 {
-        padding-bottom: 10%;
-        
+        padding-bottom: 15%;
+
         font-size: 16px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 100;
@@ -121,5 +136,12 @@
         position: relative;
         width: 10%;
         color: #ffffff;
+    }
+
+    .screenTwo {
+        position: relative;
+        padding-top: 100%;
+        min-width: 100%;
+        min-height: 100%
     }
 </style>
