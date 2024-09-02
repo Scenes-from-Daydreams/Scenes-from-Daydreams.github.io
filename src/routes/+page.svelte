@@ -5,7 +5,7 @@
 <body>
 
     <ol>
-        <li>
+        <li id="screenOne">
             <div class="videoContainer">
                 <video autoplay muted loop id="topVideo">
                     <source src={topVideo} type="video/mp4">
@@ -30,35 +30,18 @@
 
         </li>
 
-        <li>
-
-            <!-- <svg width=100% height=100%>
-                <rect width=100% height=100%/>
-            </svg> -->
+        <li id="screenTwo">
 
         </li>
     </ol>
-
-    <!-- <div class="screenOne">
- 
-    </div>
-
-    <div class="screenTwo">
-
-    </div> -->
 
 </body>
 
  <style>
 
-    /* body {
-        background: #232323;
-    } */
-
     :global(body) {
         margin: 0;
         padding: 0;
-        /* background-color: #232323; */
     }
 
     ol {
@@ -70,8 +53,6 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-        /* padding-left: 0;
-        padding-top: 0; */
     }
 
     li {
@@ -81,18 +62,8 @@
         height: 100vh;
         float: left;
         margin: 0;
-        padding: 0;
-        /* padding-left: 0;
-        padding-top: 0; */
-        
+        padding: 0;      
     }
-
-    /* .screenOne {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0,0,0,0);
-    } */
 
     /* navBar help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
     .navBar {
@@ -153,11 +124,8 @@
     .centerTitle {
         width: 25%;
         height: 25%;
-        /* padding-left: 37.5%;
-        padding-top: 7.5%; */
         position: absolute;
         left: 37.5%;
-        /* top: 100%; */
         padding-top: 12.5%;
         text-align: center;
 
@@ -177,16 +145,12 @@
     }
 
     hr {
-        /* position: relative; */
         width: 35%;
         color: #ffffff;
     }
-/* 
-    .screenTwo {
-        position: relative;
-        padding-top: 100%;
-        min-width: 100%;
-        min-height: 100%
-    } */
+
+    #screenTwo {
+        background: #232323;
+    }
 
 </style>
