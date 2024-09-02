@@ -4,35 +4,47 @@
 
 <body>
 
-    <div class="screenOne">
-
-        <video autoplay muted loop id="topVideo">
-            <source src={topVideo} type="video/mp4">
-        </video>
-
-        <div class="navBar">
-            <a href="/packages">portrait packages</a>
-            <a href="/blog">blog</a>
-            <a href="/contact">contact</a>
-            <div class="navBar-center">
-                <a href="/test">scenes from daydreams</a>
+    <ol>
+        <li>
+            <div class="videoContainer">
+                <video autoplay muted loop id="topVideo">
+                    <source src={topVideo} type="video/mp4">
+                </video>
             </div>
-        </div>
+    
+            <div class="navBar">
+                <a href="/packages">portrait packages</a>
+                <a href="/blog">blog</a>
+                <a href="/contact">contact</a>
+                <div class="navBar-center">
+                    <a href="/test">scenes from daydreams</a>
+                </div>
+            </div>
+    
+            <div class="centerTitle">
+                <h2>scenes from daydreams</h2>
+                <h3>photography by maggie blake</h3>
+                <hr>
+            </div>
 
-        <div class="centerTitle">
-            <h2>scenes from daydreams</h2>
-            <h3>photography by maggie blake</h3>
-            <hr>
-        </div>
 
+        </li>
 
+        <li>
+
+            <!-- <svg width=100% height=100%>
+                <rect width=100% height=100%/>
+            </svg> -->
+
+        </li>
+    </ol>
+
+    <!-- <div class="screenOne">
+ 
     </div>
 
-    <!-- <div class="screenTwo">
+    <div class="screenTwo">
 
-        <svg width=100% height=100%>
-            <rect width=100% height=100%/>
-        </svg>
     </div> -->
 
 </body>
@@ -43,21 +55,48 @@
         background: #232323;
     } */
 
-    /* :global(body) {
-        background-color: #232323;
-    } */
-
-    .screenOne {
-        position: relative;
-        /* background: #232323; */
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0);
+    :global(body) {
+        margin: 0;
+        padding: 0;
+        /* background-color: #232323; */
     }
+
+    ol {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        /* padding-left: 0;
+        padding-top: 0; */
+    }
+
+    li {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        float: left;
+        margin: 0;
+        padding: 0;
+        /* padding-left: 0;
+        padding-top: 0; */
+        
+    }
+
+    /* .screenOne {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0);
+    } */
 
     /* navBar help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
     .navBar {
-        position: relative;
+        position: fixed;
         padding-top: 1.75%;
         width: 100%;
     }
@@ -76,9 +115,9 @@
 
     .navBar-center a {
         float: none;
-        position: absolute;
+        position: fixed;
 
-        top: 50%;
+        top: 6%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -89,17 +128,26 @@
 
     /* adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
     #topVideo {
-        position: fixed;
+        position: relative;
         right: 0;
         bottom: 0;
         margin-bottom: -700px;
 
         z-index: -1;
+        width: auto;
         min-width: 100%;
-        min-height: 100%;
+        height: auto;
         
         opacity: 100%;
         filter: brightness(75%);
+    }
+
+    .videoContainer { 
+        width: 100%;
+        overflow: hidden;   
+        max-height: 100vh;
+        position: absolute;
+        z-index: -1;
     }
 
     .centerTitle {
@@ -107,9 +155,10 @@
         height: 25%;
         /* padding-left: 37.5%;
         padding-top: 7.5%; */
-        position: fixed;
+        position: absolute;
         left: 37.5%;
-        top: 37.5%;
+        /* top: 100%; */
+        padding-top: 12.5%;
         text-align: center;
 
         font-size: 32px;
@@ -132,11 +181,12 @@
         width: 35%;
         color: #ffffff;
     }
-
-    /* .screenTwo {
+/* 
+    .screenTwo {
         position: relative;
         padding-top: 100%;
         min-width: 100%;
         min-height: 100%
     } */
+
 </style>
