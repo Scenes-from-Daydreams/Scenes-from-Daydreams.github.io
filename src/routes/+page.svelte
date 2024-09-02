@@ -12,15 +12,6 @@
                 </video>
             </div>
     
-            <div class="navBar">
-                <a href="/packages">portrait packages</a>
-                <a href="/blog">blog</a>
-                <a href="/contact">contact</a>
-                <div class="navBar-center">
-                    <a href="/test">scenes from daydreams</a>
-                </div>
-            </div>
-    
             <div class="centerTitle">
                 <h2>scenes from daydreams</h2>
                 <h3>photography by maggie blake</h3>
@@ -63,38 +54,6 @@
         float: left;
         margin: 0;
         padding: 0;      
-    }
-
-    /* navBar help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
-    .navBar {
-        position: fixed;
-        padding-top: 1.75%;
-        width: 100%;
-    }
-
-    .navBar a, a:hover, a:focus, a:active {
-        float: left;
-        text-align: center;
-        text-decoration: none;
-        color: #ffffff;
-
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 350;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .navBar-center a {
-        float: none;
-        position: fixed;
-
-        top: 6%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 500;
-        font-size: 20px;
     }
 
     /* adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
