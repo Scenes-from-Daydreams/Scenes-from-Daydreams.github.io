@@ -10,7 +10,6 @@
             <source src={topVideo} type="video/mp4">
         </video>
 
-        <!-- <div class="topContent"> -->
         <div class="navBar">
             <a href="/packages">portrait packages</a>
             <a href="/blog">blog</a>
@@ -19,16 +18,14 @@
                 <a href="/test">scenes from daydreams</a>
             </div>
         </div>
-    <!-- </div> -->
 
-    <!-- Make screen one be the whole first screen, not just the title. Then you can organize things around that div and give it a background? -->
-
-        <!-- <div class="centerTitle">
+        <div class="centerTitle">
             <h2>scenes from daydreams</h2>
             <h3>photography by maggie blake</h3>
-        </div> -->
+            <hr>
+        </div>
 
-        <hr>
+
     </div>
 
     <!-- <div class="screenTwo">
@@ -46,9 +43,16 @@
         background: #232323;
     } */
 
+    /* :global(body) {
+        background-color: #232323;
+    } */
+
     .screenOne {
+        position: relative;
+        /* background: #232323; */
         width: 100%;
         height: 100%;
+        background: rgba(0,0,0,0);
     }
 
     /* navBar help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
@@ -74,7 +78,7 @@
         float: none;
         position: absolute;
 
-        top: 50;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -90,43 +94,22 @@
         bottom: 0;
         margin-bottom: -700px;
 
-        /* background: #232323; */
-
         z-index: -1;
         min-width: 100%;
         min-height: 100%;
-        /* max-width: 100%;
-        max-height: 100%; */
         
-        opacity: 50%;
+        opacity: 100%;
+        filter: brightness(75%);
     }
 
-    /* .topContent {
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.2);
-    } */
-
-    /* .navBar {
-        /* position: fixed; */
-        /* top: 0; */
-
-    /* } */
-
-    /* a, a:hover, a:focus, a:active {
-        text-decoration: none;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 350;
-        color: #ffffff;
-        padding-left: 5px;
-        padding-right: 5px;
-    } */
-
-    /* .centerTitle {
+    .centerTitle {
         width: 25%;
-        padding-left: 37.5%;
-        padding-top: 7.5%;
-        position: relative;
+        height: 25%;
+        /* padding-left: 37.5%;
+        padding-top: 7.5%; */
+        position: fixed;
+        left: 37.5%;
+        top: 37.5%;
         text-align: center;
 
         font-size: 32px;
@@ -134,23 +117,19 @@
         font-weight: 100;
 
         color: #ffffff;
-    } */
+    }
 
-    /* h2 {
-
-    } */
-
-    /* h3 {
+    h3 {
         padding-bottom: 15%;
 
         font-size: 16px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 100;
-    } */
+    }
 
     hr {
-        position: relative;
-        width: 10%;
+        /* position: relative; */
+        width: 35%;
         color: #ffffff;
     }
 
