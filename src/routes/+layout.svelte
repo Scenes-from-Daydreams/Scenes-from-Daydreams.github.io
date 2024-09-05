@@ -1,9 +1,10 @@
 <div class="navBar">
-    <a href="/packages">portrait packages</a>
+    <!-- <a href="/packages">portrait packages</a>
     <a href="/blog">blog</a>
-    <a href="/contact">contact</a>
+    <a href="/contact">contact</a> -->
+    <a href="/portfolio">portfolio</a>
     <div class="navBar-center">
-        <a href="/test">scenes from daydreams</a>
+        <a href="/">scenes from daydreams</a>
     </div>
 </div>
 

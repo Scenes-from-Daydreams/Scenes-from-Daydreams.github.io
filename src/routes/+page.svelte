@@ -15,7 +15,6 @@
             <div class="centerTitle">
                 <h2>scenes from daydreams</h2>
                 <h3>photography by maggie blake</h3>
-                <h3>test</h3>
                 <hr>
             </div>
 
