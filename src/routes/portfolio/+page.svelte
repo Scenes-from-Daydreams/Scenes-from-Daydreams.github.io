@@ -10,7 +10,8 @@
     //     }
     // )
 
-    const photoRange = Array.from({length: 40}, (x, i) => './public/images/'+(i+3)+".jpg") // [1,2,3,4,5,6,7,8,9,10]
+
+    const photoRange = Array.from({length: 42}, (x, i) => "/"+(i+1)+".jpg") // [1,2,3,4,5,6,7,8,9,10]
 
     // $: console.log(photoRange);
     // // $: console.log(imageModules) 
